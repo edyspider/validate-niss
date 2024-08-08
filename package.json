@@ -1,0 +1,29 @@
+{
+  "name": "@edyspider/validate-niss",
+  "version": "1.0.0",
+  "description": "A NPM package to validate Portuguese social security identification number (NISS).",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edyspider/validate-niss.git"
+  },
+  "keywords": [
+    "NISS",
+    "SS",
+    "Social Security",
+    "Validate",
+    "Portugal"
+  ],
+  "author": "EdySpider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edyspider/validate-niss/issues"
+  },
+  "homepage": "https://github.com/edyspider/validate-niss#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
