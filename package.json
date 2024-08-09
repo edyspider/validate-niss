@@ -4,7 +4,10 @@
   "description": "A NPM package to validate Portuguese social security identification number (NISS).",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,12 @@
   },
   "homepage": "https://github.com/edyspider/validate-niss#readme",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "eslint": "^9.8.0",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "webpack": "^5.93.0"
   }
 }
