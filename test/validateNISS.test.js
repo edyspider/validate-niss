@@ -1,4 +1,4 @@
-const validateNISS =  require('../src/index');
+const { validateNISS, randomNISS} =  require('../src/index');
 
 test('Valid NISS numbers', () => {
     expect(validateNISS('12345678910')).toBe(true);
@@ -21,4 +21,11 @@ test('Invalid input types', () => {
     expect(validateNISS(null)).toBe(false); // null value
     expect(validateNISS('')).toBe(false); // empty value
     expect(validateNISS(undefined)).toBe(false); // undefined value
+});
+
+test('Valid Random NISS numbers', () => {
+    for (let i = 0; i < 10; i++) {
+        const niss = randomNISS();
+        expect(validateNISS(niss)).toBe(true);
+    }
 });
