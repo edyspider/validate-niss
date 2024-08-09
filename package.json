@@ -1,6 +1,6 @@
 {
   "name": "@edyspider/validate-niss",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A NPM package to validate Portuguese social security identification number (NISS).",
   "main": "index.js",
   "scripts": {
