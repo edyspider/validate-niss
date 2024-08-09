@@ -21,13 +21,11 @@ function validateNISS(value) {
 
     // Set calculation variables
     factor = ['29', '23', '19', '17', '13', '11', '7', '5', '3', '2'];
-    let calcArr = [];
-    let calc = 0;
 
     // Factor calculation
+    calc = 0;
     for (i = 0; i < 10; i++) {
-        calcArr[i] = value[i] * factor[i];
-        calc += calcArr[i];
+        calc += value[i] * factor[i];
     }
 
     // Calculate MOD 10
