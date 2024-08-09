@@ -34,8 +34,5 @@
   },
   "dependencies": {
     "webpack": "^5.93.0"
-  },
-  "publishConfig": {
-  "@edyspider:registry": "https://npm.pkg.github.com"
-}
+  }
 }
