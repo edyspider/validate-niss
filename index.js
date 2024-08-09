@@ -10,7 +10,7 @@ function validateNISS(value) {
     }
 
     // Check first digit
-    if (value[0] !== '1') {
+    if (value[0] === '0') {
         return false;
     }
 
@@ -22,7 +22,7 @@ function validateNISS(value) {
     // Set calculation variables
     factor = ['29', '23', '19', '17', '13', '11', '7', '5', '3', '2'];
     let calcArr = [];
-    let calc;
+    let calc = 0;
 
     // Factor calculation
     for (i = 0; i < 10; i++) {
@@ -31,13 +31,14 @@ function validateNISS(value) {
     }
 
     // Calculate MOD 10
-    const mod10 = (Number(calc) % 10);
+    const mod10 = calc % 10;
     
     //Calculate check digit
     const checkSum = 9 - mod10;
 
     // Compare calculated check digit with the provided one
-    return checkSum === value[10];
+    const checkDigit = (value % 10);
+    return (checkSum === checkDigit);
 }
 
 module.exports = validateNISS;
