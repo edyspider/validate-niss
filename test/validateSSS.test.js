@@ -1,4 +1,4 @@
-const validateNISS =  require('../index');
+const validateNISS =  require('../src/index');
 
 test('Valid NISS numbers', () => {
     expect(validateNISS('12345678910')).toBe(true);
